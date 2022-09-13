@@ -1,0 +1,20 @@
+consumer:
+  kafka:
+    bootstrap-servers: localhost:9092
+    security:
+      protocol: SASL_PLAINTEXT
+      mechanism: PLAIN
+      username:
+      password:
+
+producer:
+  kafka:
+    bootstrap:
+      servers: localhost:9092
+    security:
+      protocol: SASL_PLAINTEXT
+    sasl:
+      mechanism: PLAIN
+    user:
+    password:
+    topic: targetTopic
